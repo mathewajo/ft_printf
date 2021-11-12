@@ -9,6 +9,8 @@ Instructions:
 5. gcc -L . -lftprintf main.c
 6. ./a.out
 
+Please note: I need to do **make re** every time I make changes in the code.
+
 
 check this:
 
