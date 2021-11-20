@@ -1,5 +1,19 @@
 # ft_printf
 
+'use strict';
+
+async function countGithub(repo) {
+    const response = await fetch(`https://api.github.com/repos/${repo}/stats/contributors`)
+    const contributors = await response.json();
+    const lineCounts = contributors.map(contributor => (
+        contributor.weeks.reduce((lineCount, week) => lineCount + week.a - week.d, 0)
+    ));
+    const lines = lineCounts.reduce((lineTotal, lineCount) => lineTotal + lineCount);
+    window.alert(lines);
+}
+
+countGithub('jquery/jquery'); // or count anything you like
+
 ***125/100***
 
 ![Screenshot 2021-11-20 at 09 54 29](https://user-images.githubusercontent.com/76873228/142720762-b79ac4a2-b890-4943-829a-ffbaf3eee237.jpg)
@@ -41,18 +55,6 @@ int main(void)
 
 ```c
 # Full Code (not formatted according to Norm!)
-
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ajomathew <ajomathew@student.42.fr>        +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/19 17:45:55 by ajomathew         #+#    #+#             */
-/*   Updated: 2021/11/20 10:20:44 by ajomathew        ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
