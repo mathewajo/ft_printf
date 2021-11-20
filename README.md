@@ -27,7 +27,7 @@ Please note: I need to do **make re** every time I make changes in the code.
 
 
 check this:
-```
+```c
 int main(void)
 {
     int number;
