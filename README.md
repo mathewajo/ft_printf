@@ -27,7 +27,7 @@ Please note: I need to do **make re** every time I make changes in the code.
 
 
 check this:
-
+```
 int main(void)
 {
     int number;
@@ -37,3 +37,4 @@ int main(void)
     printf("%-05d\n", number);
     return (0);
 }
+```
