@@ -40,7 +40,7 @@ int main(void)
 ```
 
 ```c
-# Full Code
+# Full Code (not formatted according to Norm!)
 
 /* ************************************************************************** */
 /*                                                                            */
