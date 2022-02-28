@@ -45,7 +45,7 @@ int main(void)
 ```
 
 ```c
-# Full Code (not formatted according to Norm!)
+# Full Code
 
 #include <stdio.h>
 #include <stdlib.h>
